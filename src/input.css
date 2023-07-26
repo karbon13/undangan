@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-serif text-lg font-normal tracking-tight text-dark-1 subpixel-antialiased;
+}
+
+.navbar-fixed {
+  @apply fixed bottom-2 left-1/2 -translate-x-1/2 rounded-lg bg-dark-2 bg-opacity-90 py-2;
+}
+
+.navbar-item {
+  @apply mx-3 flex h-10 w-10 items-center justify-center rounded-full border-0  text-sage-3  hover:bg-sage-3 hover:text-white md:mx-4 lg:mx-8;
+}
+
+.countdown-list {
+  @apply mx-2 h-16 w-16 rounded-full border bg-dark-1 p-2 transition-all ease-linear hover:bg-dark-2 hover:ring-2 hover:ring-dark-1 md:h-20 md:w-20 lg:mx-4 flex justify-center items-center md:block;
+}
+
+.countdown-unit {
+  @apply  text-sm font-normal sm:block;
+}
+
+.button {
+  @apply inline-flex items-center gap-1 rounded-full bg-sage-4 px-4 py-3 font-sans text-xs font-semibold uppercase text-white transition duration-300 ease-in-out hover:scale-110 hover:opacity-80 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-sage-3 md:gap-3 md:px-6 md:text-base lg:px-8;
+}
